@@ -1,9 +1,0 @@
-C:\wamp\www\LaRondeDesFacs\Projet-RFID---La-Ronde-des-Facs\Developpement\Application\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\bin\Debug\App_LaRondeDesFacs.exe.config
-C:\wamp\www\LaRondeDesFacs\Projet-RFID---La-Ronde-des-Facs\Developpement\Application\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\bin\Debug\App_LaRondeDesFacs.exe
-C:\wamp\www\LaRondeDesFacs\Projet-RFID---La-Ronde-des-Facs\Developpement\Application\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\bin\Debug\App_LaRondeDesFacs.pdb
-C:\wamp\www\LaRondeDesFacs\Projet-RFID---La-Ronde-des-Facs\Developpement\Application\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\obj\Debug\App_LaRondeDesFacs.csprojResolveAssemblyReference.cache
-C:\wamp\www\LaRondeDesFacs\Projet-RFID---La-Ronde-des-Facs\Developpement\Application\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\obj\Debug\App_LaRondeDesFacs.Main.resources
-C:\wamp\www\LaRondeDesFacs\Projet-RFID---La-Ronde-des-Facs\Developpement\Application\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\obj\Debug\App_LaRondeDesFacs.Properties.Resources.resources
-C:\wamp\www\LaRondeDesFacs\Projet-RFID---La-Ronde-des-Facs\Developpement\Application\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\obj\Debug\App_LaRondeDesFacs.csproj.GenerateResource.Cache
-C:\wamp\www\LaRondeDesFacs\Projet-RFID---La-Ronde-des-Facs\Developpement\Application\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\obj\Debug\App_LaRondeDesFacs.exe
-C:\wamp\www\LaRondeDesFacs\Projet-RFID---La-Ronde-des-Facs\Developpement\Application\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\obj\Debug\App_LaRondeDesFacs.pdb
