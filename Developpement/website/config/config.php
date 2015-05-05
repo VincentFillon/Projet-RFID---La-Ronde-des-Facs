@@ -6,6 +6,8 @@
  * Time: 10:46
  */
 
+
+// TODO => CHANGER LA CONFIG !!! (ici : config de Pronostiques)
 $hote = '37.187.120.205';
 $login_bdd = 'prono';
 $mdp_bdd = 'pronoPWD';
