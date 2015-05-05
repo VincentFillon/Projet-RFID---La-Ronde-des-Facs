@@ -1,0 +1,40 @@
+/* Custom scss file
+-------------------------------------------------- */
+/* Custom scss variables for global.scss
+-------------------------------------------------- */
+/* line 7, ../sass/global.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+/* line 11, ../sass/global.scss */
+html body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+/* line 15, ../sass/global.scss */
+html body code {
+  font-size: 80%;
+}
+/* line 19, ../sass/global.scss */
+html body > .container {
+  padding: 60px 15px 0;
+}
+/* line 23, ../sass/global.scss */
+html body .container .text-muted {
+  margin: 20px 0;
+}
+/* line 27, ../sass/global.scss */
+html body .footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* line 32, ../sass/global.scss */
+html body .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
