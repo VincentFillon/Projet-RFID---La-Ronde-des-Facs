@@ -30,5 +30,5 @@
     </div>
 </form>
 <?php
-    include("BDD/ConnectLDAP.php");
+    include("config/config.php");
 ?>

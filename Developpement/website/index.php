@@ -73,6 +73,7 @@ $page = (isset($_GET['page'])) ? htmlentities($_GET['page']) : NULL;
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
+
         <!-- Begin page content -->
         <div class="container">
             <?php
