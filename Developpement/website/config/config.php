@@ -30,7 +30,7 @@ catch(Exception $e)
 }
 
 $server = '(local)';
-$connexionInfo = array("Database"=>"FacPrincipal");
+$connexionInfo = array("Database"=>"FacPrincipal", 'ReturnDatesAsStrings'=>true);
 $link = sqlsrv_connect($server,$connexionInfo);
 if( !$link ) {
     echo "La connexion n'a pu être établie.<br />";
@@ -63,7 +63,7 @@ soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
 
 <soap:Header>
   <m:Trans xmlns:m="http://www.w3schools.com/transaction/"
-  soap:mustUnderstand="1">234
+  soap:mustUnderstand="1">
   </m:Trans>
 </soap:Header>
 

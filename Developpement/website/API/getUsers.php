@@ -10,24 +10,19 @@ header ("Content-Type:text/xml");
 
 include '../config/config.php';
 
-try {
-    $sql = $dbh->query("SELECT * FROM User");
+$userID = (isset($_GET['userId'])) ? htmlentities($_GET['userId']) : NULL;
 
-    $jsonObj = array();
+$sql = "Select * FROM [User]";
 
-    if ($sql->rowCount() < 1) {
-        $jsonObj= "ERROR : Bad request";
-    }
-    else {
-        while ($user = $sql->fetch(PDO::FETCH_ASSOC)) {
-            $jsonObj[] = $user;
-        }
-    }
+$stmt = sqlsrv_query($link, $sql);
 
-} catch (PDOException $e) {
-    print "Erreur !: " . $e->getMessage() . "<br/>";
+if( $stmt === false ) {
+    die( print_r( sqlsrv_errors(), true));
 }
 
+while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
+    $jsonObj[] = array("user_id"=>$row["user_id"], "nom"=>$row["nom"], "prenom"=>$row["prenom"], "date_naissance"=>$row["date_naissance"], "faculte"=>$row["faculte"], "promotion"=>$row["promotion"],);
+}
 
 array_to_xml($jsonObj, $xml);
 print $xml->asXML();
