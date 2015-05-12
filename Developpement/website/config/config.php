@@ -55,3 +55,16 @@ function array_to_xml($student_info, &$xml_student_info) {
         }
     }
 }
+
+$xml = new SimpleXMLElement('<?xml version="1.0"?>
+<soap:Envelope
+xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
+
+<soap:Header>
+  <m:Trans xmlns:m="http://www.w3schools.com/transaction/"
+  soap:mustUnderstand="1">234
+  </m:Trans>
+</soap:Header>
+
+</soap:Envelope>');

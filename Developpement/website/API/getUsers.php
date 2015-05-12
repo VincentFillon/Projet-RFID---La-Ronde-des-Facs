@@ -28,6 +28,6 @@ try {
     print "Erreur !: " . $e->getMessage() . "<br/>";
 }
 
-$xml = new SimpleXMLElement('<result/>');
+
 array_to_xml($jsonObj, $xml);
 print $xml->asXML();
