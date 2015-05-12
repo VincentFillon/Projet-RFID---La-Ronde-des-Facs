@@ -26,13 +26,14 @@ $page = (isset($_GET['page'])) ? htmlentities($_GET['page']) : NULL;
         <!-- TODO => Définir un favicon
         <link rel="icon" href="img/favicon.ico">
         -->
-        <title>Title</title>
+        <title>La Ronde des Facs</title>
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles -->
         <link href="style/css/global.css" rel="stylesheet">
+        <link href="style/css/melanie.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -53,30 +54,25 @@ $page = (isset($_GET['page'])) ? htmlentities($_GET['page']) : NULL;
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+                    <a class="navbar-brand" href="#">La ronde des facs</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="active"><a href="index.php?page=home.tpl">Accueil</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href=""  role="button" aria-expanded="false">Inscription<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
+                                <li><a href="index.php?page=inscPerso.tpl">Vous  êtes un personnel ?</a></li>
+                                <li><a href="index.php?page=inscEtud.tpl">Vous êtes étudiant ?</a> </li>
                             </ul>
                         </li>
+                        <li><a href="index.php?page=desinscription.tpl">Se Désinscrire</a></li>
+                        <li><a href="index.php?page=classement.tpl">Classement</a></li>
+                        <li><a href="index.php?page=contact.tpl">Contactez-nous</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-
         <!-- Begin page content -->
         <div class="container">
             <?php
@@ -91,7 +87,7 @@ $page = (isset($_GET['page'])) ? htmlentities($_GET['page']) : NULL;
 
         <footer class="footer">
             <div class="container">
-                <p class="text-muted">Place sticky footer content here.</p>
+                <p class="text-muted">IUT Nice Sophia Antipolis</p>
             </div>
         </footer>
 

@@ -1,0 +1,14 @@
+/* Custom scss file
+-------------------------------------------------- */
+/* Custom scss variables for global.scss
+-------------------------------------------------- */
+/* line 7, ../sass/global.scss */
+.place {
+    text-align: center;
+}
+
+.miniTitre {
+    text-align: left;
+    font-style: italic;
+    font-variant: small-caps;
+}
