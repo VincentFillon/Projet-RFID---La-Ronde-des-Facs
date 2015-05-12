@@ -26,14 +26,6 @@ try {
     print "Erreur !: " . $e->getMessage() . "<br/>";
 }
 
-$test_array = array (
-    'bla' => 'blub',
-    'foo' => 'bar',
-    'another_array' => array (
-        'stack' => 'overflow',
-    ),
-);
-
 $xml = new SimpleXMLElement('<result/>');
 array_to_xml($jsonObj, $xml);
 print $xml->asXML();
