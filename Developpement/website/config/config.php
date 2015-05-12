@@ -6,12 +6,10 @@
  * Time: 10:46
  */
 
-
-// TODO => CHANGER LA CONFIG !!! (ici : config de Pronostiques)
 $hote = '37.187.120.205';
-$login_bdd = 'prono';
-$mdp_bdd = 'pronoPWD';
-$bdd = 'pronostiques';
+$login_bdd = 'rondedesfacs';
+$mdp_bdd = 'rdf2016';
+$bdd = 'FacPrincipal';
 $salt = sha1('pr0n0S31');
 
 // Connect to server and select database.
