@@ -32,9 +32,26 @@ catch(Exception $e)
 $server = '(local)';
 $connexionInfo = array("Database"=>"FacPrincipal");
 $link = sqlsrv_connect($server,$connexionInfo);
-if( $link ) {
-    echo "Connexion établie.<br />";
-}else{
+if( !$link ) {
     echo "La connexion n'a pu être établie.<br />";
     die( print_r( sqlsrv_errors(), true));
+}
+
+// function defination to convert array to xml
+function array_to_xml($student_info, &$xml_student_info) {
+    foreach($student_info as $key => $value) {
+        if(is_array($value)) {
+            if(!is_numeric($key)){
+                $subnode = $xml_student_info->addChild("$key");
+                array_to_xml($value, $subnode);
+            }
+            else{
+                $subnode = $xml_student_info->addChild("item");
+                array_to_xml($value, $subnode);
+            }
+        }
+        else {
+            $xml_student_info->addChild("$key",htmlspecialchars("$value"));
+        }
+    }
 }

@@ -17,7 +17,7 @@ try {
         $jsonObj= "ERROR : Bad request";
     }
     else {
-        while ($user = $sql->fetch(PDO::FETCH_OBJ)) {
+        while ($user = $sql->fetch(PDO::FETCH_ASSOC)) {
             $jsonObj[] = $user;
         }
     }
@@ -26,6 +26,14 @@ try {
     print "Erreur !: " . $e->getMessage() . "<br/>";
 }
 
-$final_res =json_encode($jsonObj) ;
+$test_array = array (
+    'bla' => 'blub',
+    'foo' => 'bar',
+    'another_array' => array (
+        'stack' => 'overflow',
+    ),
+);
 
-echo $final_res;
+$xml = new SimpleXMLElement('<result/>');
+array_to_xml($jsonObj, $xml);
+print $xml->asXML();
