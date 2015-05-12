@@ -6,6 +6,8 @@
  * Time: 10:46
  */
 
+header ("Content-Type:application/soap+xm");
+
 include '../config/config.php';
 
 try {

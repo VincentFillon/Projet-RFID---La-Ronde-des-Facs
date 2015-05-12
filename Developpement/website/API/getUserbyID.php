@@ -5,7 +5,7 @@
  * Date: 05/05/2015
  * Time: 10:46
  */
-header ("Content-Type:text/xml");
+header ("Content-Type:application/soap+xm");
 
 include '../config/config.php';
 
