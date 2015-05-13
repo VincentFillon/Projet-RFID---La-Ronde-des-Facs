@@ -5,7 +5,7 @@
  * Date: 12/05/2015
  * Time: 20:48
  */
-include('../config/configSecondaire.php');
+include('/config/configSecondaire.php');
 
 
 $sql = "Select TOP 3 *
