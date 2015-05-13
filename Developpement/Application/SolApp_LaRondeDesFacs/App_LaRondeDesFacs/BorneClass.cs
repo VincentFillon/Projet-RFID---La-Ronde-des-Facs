@@ -41,25 +41,25 @@ namespace App_LaRondeDesFacs
             borne = borneEntity.OrderByDescending(u => u.nb_passage).FirstOrDefault();
             return borne;
         }
-        public static Borne getProblemBorneByUserID(string id)
+        public static List<Borne> getProblemBorneByUserID(string id)
         {
-            Borne borne = new Borne();
+            List<Borne> bornes = new List<Borne>();
             FacSecondaireEntities facSecondaireEntity = new FacSecondaireEntities();
-            var borneEntity = from b in facSecondaireEntity.Borne
+            var borneEntities = from b in facSecondaireEntity.Borne
                                 where b.user_id == id && b.nb_passage == -1
                                 select b;
-            borne = borneEntity.FirstOrDefault();
-            return borne;
+            bornes = borneEntities.ToList();
+            return bornes;
         }
-        public static Borne getAvertissementBorneByUserID(string id)
+        public static List<Borne> getAvertissementBorneByUserID(string id)
         {
-            Borne borne = new Borne();
+            List<Borne> bornes = new List<Borne>();
             FacSecondaireEntities facSecondaireEntity = new FacSecondaireEntities();
-            var borneEntity = from b in facSecondaireEntity.Borne
+            var borneEntities = from b in facSecondaireEntity.Borne
                               where b.user_id == id && b.nb_passage == -2
                               select b;
-            borne = borneEntity.FirstOrDefault();
-            return borne;
+            bornes = borneEntities.ToList();
+            return bornes;
         }
 
         public static Boolean getExistBorne(string id)
