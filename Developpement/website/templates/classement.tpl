@@ -1,5 +1,6 @@
 <?php
 include ('requetes/ClassementUserTop.php');
+ini_set('display_errors','off');
 ?>
 <div class="jumbotron">
     <h1 class="place" style="color: #337ab7">Classement</h1>
@@ -8,43 +9,46 @@ include ('requetes/ClassementUserTop.php');
 <div class="container">
     <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4 place" style="background-color: #d5d5d5">1ère Position : <?php echo  $row['user_id'];?></div>
+        <div class="col-md-4 place" style="background-color: #d5d5d5">1ère Position :<p> <?php echo  $userObj[0]["user_id"];?></p></div>
     </div>
     <div class="row">
-        <div class="col-md-6 place" style="background-color: #d5d5d5 ">2ème Position</div>
-        <div class="col-md-6 place" style="background-color: #d5d5d5">3ème Position</div>
+        <div class="col-md-6 place" style="background-color: #d5d5d5 ">2ème Position : <p> <?php echo  $userObj[1]["user_id"];?></p></div>
+        <div class="col-md-6 place" style="background-color: #d5d5d5">3ème Position : <p> <?php echo  $userObj[2]["user_id"];?></p></div>
     </div>
     <br>
+</div>
+    <?php
+        include('requetes/ClassementUser4.php');
+    ?>
+<div class="container">
     <table class="table table-striped">
-        <tr>
-            <th>Nom</th>
-            <th>Prénom</th>
-            <th>Position</th>
+        <?php
+        $valeur = sqlsrv_num_fields($stmt);
+       echo "<tr>
+            <th>Identifiant User</th>
+            <th>Nombre de passage</th>
             <th>Temp</th>
-        </tr>
-        <tr>
-            <td>test</td>
-            <td>test</td>
-            <td>4</td>
-            <td>45m</td>
-        </tr>
-        <tr>
-            <td>essai</td>
-            <td>essai</td>
-            <td>5</td>
-            <td>45m</td>
-        </tr>
-        <tr>
-            <td>cc</td>
-            <td>cc</td>
-            <td>6</td>
-            <td>45m</td>
-        </tr>
-        <tr>
-            <td>des</td>
-            <td>des</td>
-            <td>7</td>
-            <td>45m</td>
-        </tr>
+            <th>Position Classement</th>
+        </tr>";
+
+            for ($i = 0; $i < $valeur; $i++){
+                echo '<tr>';
+                    echo '<td>'.$userPlus[$i]["user_id"].'</td>';
+                    echo '<td>'.$userPlus[$i]["nb_passage"].'</td>';
+                    echo '<td>';
+                        $result = $userPlus[$i]["temps"]->format('Y-m-d H:i:s');
+                        if ($result) {
+                        echo $result;
+                        } else { // format failed
+                        echo "Unknown Time";
+                        }
+                    echo '</td>';
+                    echo '<td>';
+                            $number = $i +1;
+                            echo $number;
+                    echo '</td>';
+                echo '</tr>';
+            }
+        ?>
     </table>
 </div>

@@ -13,6 +13,3 @@ if( !$link ) {
     echo "La connexion n'a pu être établie.<br />";
     die( print_r( sqlsrv_errors(), true));
 }
-else{
-    echo "Connexion OK ";
-}
