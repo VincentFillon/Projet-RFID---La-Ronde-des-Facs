@@ -67,7 +67,10 @@ namespace App_LaRondeDesFacs
 
         private void CoursesForm_Load(object sender, EventArgs e)
         {
-
+            if(BorneClass.getAllListBorne().Count > 1)
+            {
+                btnDepart.Enabled = false;
+            }
         }
 
         private void btnTour_Click(object sender, EventArgs e)
@@ -175,6 +178,23 @@ namespace App_LaRondeDesFacs
             {
                 MessageBox.Show("Aucun utilisateur est sélectionné.");
             }
+        }
+
+        private void btnDepart_Click(object sender, EventArgs e)
+        {
+            DateTime datenow = DateTime.Now;
+            foreach (User user in UserClass.getAllListUsers())
+            {
+                Borne borne = new Borne();
+                borne.user_id = user.user_id;
+                borne.nb_passage = 0;
+                borne.temps = datenow;
+                BorneClass.setBorne(borne);
+            }
+
+            lblErreur.Text = "Départ annoncé à : " + datenow.ToLongTimeString();
+            lblErreur.Visible = true;
+            btnDepart.Enabled = false;
         }
     }
 }

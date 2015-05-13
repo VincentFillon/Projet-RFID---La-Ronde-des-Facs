@@ -29,3 +29,7 @@ C:\Users\val0m\Documents\Visual Studio 2013\Projects\SolApp_LaRondeDesFacs\App_L
 C:\Users\val0m\Documents\Visual Studio 2013\Projects\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\val0m\Documents\Visual Studio 2013\Projects\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\val0m\Documents\Visual Studio 2013\Projects\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\obj\Debug\App_LaRondeDesFacs.csproj.App.config
+C:\Users\val0m\Documents\Visual Studio 2013\Projects\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\bin\Debug\App_LaRondeDesFacs.exe.manifest
+C:\Users\val0m\Documents\Visual Studio 2013\Projects\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\bin\Debug\App_LaRondeDesFacs.application
+C:\Users\val0m\Documents\Visual Studio 2013\Projects\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\obj\Debug\App_LaRondeDesFacs.exe.manifest
+C:\Users\val0m\Documents\Visual Studio 2013\Projects\SolApp_LaRondeDesFacs\App_LaRondeDesFacs\obj\Debug\App_LaRondeDesFacs.application

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="App_LaRondeDesFacs.exe" version="1.0.0.0" publicKeyToken="c18fd489473862bf" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="App_LaRondeDesFacs" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="App_LaRondeDesFacs.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options du manifeste de contrôle de compte d'utilisateur
+          Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le 
+          nœud requestedExecutionLevel par l'une des propositions suivantes :
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si vous souhaitez utiliser la virtualisation de fichiers et du Registre pour la 
+         compatibilité descendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="App_LaRondeDesFacs.exe" size="81864">
+      <assemblyIdentity name="App_LaRondeDesFacs" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4b1SMHhDgJipwK/ppPRPJOmSHFMNv+Q/nSdfFDm/lVs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5196496">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7W69dJBS+QGPZplnGuVGmt7fCGz4sb1CVrvpxOf2/wU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="621264">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ob9snjgg6D9D6fIN19mwozYqkxRvCv4LEzAYXi1RsMs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Net.Http.Extensions.dll" size="22232">
+      <assemblyIdentity name="System.Net.Http.Extensions" version="2.2.29.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nIuH6alQ3rfyh1L4deqC8bVacJlqyMEgc/zqM2ZLIEg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Net.Http.Primitives.dll" size="21720">
+      <assemblyIdentity name="System.Net.Http.Primitives" version="4.2.29.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6bU19EYMdtZ99inOLLuExDWnEsqUi2HdqvMTCVBrhgQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="App_LaRondeDesFacs.exe.config" size="1972">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zZvdlBZ6qZZvOlmcthHEdAvaS4z/ZNa2XG5Im2xb5ls=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Macbook-Val\val0m" issuerKeyHash="cb83c8b1e84d2a467107ea3a3e23341edf480749" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/q9zNRQ1EEc9NI978bOwoIcno7RAslPPtMFqtIhGeYw=</DigestValue></Reference></SignedInfo><SignatureValue>nGe5Zp5rD1YF3PVuVrAtJWuePIUskGbNMTvcQDzLrVQc5iJMLTWpcwt++vnFzxepolM9MWLjGnDxonb9CwDe8eQ+5XvzXeF2W6IAmhxNUDJ7B7z05T5KujWvF8mWXdgkQxyd2xV8+t3afQiEYkddkjQ5Sqx1pr7hkMYdqG8NS2I=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yvX7h6OSZRUotX0foKa0h8yrtMtRQc0WpmI7J9my47vA48OngwMTnRSJ0vxcsBAe2UrxE9hDTUVnkIBY4lJ7HAPWu7gl5NgJuhY8bkKdg8sl3FokJVUuNc+/LHzKBvmBBM/cQhBDfOk4NrLCmGkWi60sB/aISmqtUP3yLudybZ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8c794688b46ac1b4cf53b240b4a32787a0b0b3f17b8f343d471035143573affe" Description="" Url=""><as:assemblyIdentity name="App_LaRondeDesFacs.exe" version="1.0.0.0" publicKeyToken="c18fd489473862bf" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Macbook-Val\val0m</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>mrltkQczi54zwZE84ZnB1QpTWOCJi27APCd/9eeJh9s=</DigestValue></Reference></SignedInfo><SignatureValue>hWJLxh2S9DJ5iclF4BU2bIV6OA8+f5b1lSdZFwTAGmR5Hb90Sfqrcpv++DRfd3vmCHPLbfws2IB9e0+xYrU13W82BcUkeAsCmq0p2eyng+8f0wqtx532/OILsGPWzM1krqj0IJat9JDRqVkrTVhZ6x2V9JBeLqFEQ0KjYHqT4Bo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yvX7h6OSZRUotX0foKa0h8yrtMtRQc0WpmI7J9my47vA48OngwMTnRSJ0vxcsBAe2UrxE9hDTUVnkIBY4lJ7HAPWu7gl5NgJuhY8bkKdg8sl3FokJVUuNc+/LHzKBvmBBM/cQhBDfOk4NrLCmGkWi60sB/aISmqtUP3yLudybZ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQXWN3k6Io7IlBUUpIWncv0TANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIATQBhAGMAYgBvAG8AawAtAFYAYQBsAFwAdgBhAGwAMABtMB4XDTE1MDUxMzEwNTI0MVoXDTE2MDUxMjE2NTI0MVowLTErMCkGA1UEAx4iAE0AYQBjAGIAbwBvAGsALQBWAGEAbABcAHYAYQBsADAAbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAyvX7h6OSZRUotX0foKa0h8yrtMtRQc0WpmI7J9my47vA48OngwMTnRSJ0vxcsBAe2UrxE9hDTUVnkIBY4lJ7HAPWu7gl5NgJuhY8bkKdg8sl3FokJVUuNc+/LHzKBvmBBM/cQhBDfOk4NrLCmGkWi60sB/aISmqtUP3yLudybZ0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQATcjxQXXWnriBu4tN8N00V77Iih4TiHhMGhn5orGJfe40C/x2V6Wge8q6tLpW1bHLE68h66Ss9VTTTfn/33smEWUp5LyNVsohDfubkFeu64d44mfOZqMdKM+WrAbFePMMB6BrPeqT3teduD9IiU3z5uKyqvZz75yHpMRh8/0IKrQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

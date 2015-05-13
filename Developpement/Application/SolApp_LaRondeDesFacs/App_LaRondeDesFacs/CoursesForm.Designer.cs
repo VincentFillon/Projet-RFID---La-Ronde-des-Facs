@@ -59,6 +59,7 @@
             this.lblErreur = new System.Windows.Forms.Label();
             this.btnDisqualification = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.btnDepart = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -179,6 +180,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnDepart);
             this.groupBox1.Controls.Add(this.btnTour);
             this.groupBox1.Controls.Add(this.txtUserIDmanuel);
             this.groupBox1.Controls.Add(this.label6);
@@ -192,7 +194,7 @@
             // btnTour
             // 
             this.btnTour.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTour.Location = new System.Drawing.Point(600, 21);
+            this.btnTour.Location = new System.Drawing.Point(459, 21);
             this.btnTour.Name = "btnTour";
             this.btnTour.Size = new System.Drawing.Size(143, 103);
             this.btnTour.TabIndex = 10;
@@ -203,7 +205,7 @@
             // txtUserIDmanuel
             // 
             this.txtUserIDmanuel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserIDmanuel.Location = new System.Drawing.Point(306, 46);
+            this.txtUserIDmanuel.Location = new System.Drawing.Point(165, 46);
             this.txtUserIDmanuel.Name = "txtUserIDmanuel";
             this.txtUserIDmanuel.Size = new System.Drawing.Size(266, 53);
             this.txtUserIDmanuel.TabIndex = 9;
@@ -212,7 +214,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(193, 61);
+            this.label6.Location = new System.Drawing.Point(52, 61);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 20);
             this.label6.TabIndex = 8;
@@ -352,6 +354,17 @@
             this.linkLabel1.Text = "L\'utilisateur rencontre un problème ? Signalez le !";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // btnDepart
+            // 
+            this.btnDepart.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepart.Location = new System.Drawing.Point(798, 21);
+            this.btnDepart.Name = "btnDepart";
+            this.btnDepart.Size = new System.Drawing.Size(189, 103);
+            this.btnDepart.TabIndex = 11;
+            this.btnDepart.Text = "Depart";
+            this.btnDepart.UseVisualStyleBackColor = true;
+            this.btnDepart.Click += new System.EventHandler(this.btnDepart_Click);
+            // 
             // CoursesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -420,5 +433,6 @@
         private System.Windows.Forms.Label lblErreur;
         private System.Windows.Forms.Button btnDisqualification;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button btnDepart;
     }
 }
