@@ -19,5 +19,4 @@ if( $stmt === false ) {
 else{
     echo "Success ";
 }
-
 header('../index.php');

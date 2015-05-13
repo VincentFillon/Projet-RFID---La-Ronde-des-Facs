@@ -21,7 +21,7 @@ if( $stmt === false ) {
 }
 
 while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
-    $jsonObj[] = array("user_id"=>$row["user_id"], "nom"=>$row["nom"], "prenom"=>$row["prenom"], "date_naissance"=>$row["date_naissance"], "faculte"=>$row["faculte"], "promotion"=>$row["promotion"],);
+    $jsonObj[] = array("user_id"=>$row["user_id"], "nom"=>$row["nom"], "prenom"=>$row["prenom"], "date_naissance"=>$row["date_naissance"], "faculte"=>$row["faculte"], "promotion"=>$row["promotion"]);
 }
 
 array_to_xml($jsonObj, $xml);

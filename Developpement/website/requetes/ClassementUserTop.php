@@ -14,16 +14,12 @@ where [nb_passage] = (SELECT MAX([nb_passage]) FROM [Borne])
 order by [temps] desc ";
 
 
-$stmt = sqlsrv_query($link, $sql);
-if( $stmt === false ) {
+$stm = sqlsrv_query($link, $sql);
+if( $stm === false ) {
     die( print_r( sqlsrv_errors(), true));
 }
-else{
-
-    while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
-        echo $row."<br />";
+    while( $row = sqlsrv_fetch_array( $stm, SQLSRV_FETCH_ASSOC) ) {
+        $userObj[] = array("user_id"=>$row["user_id"], "nb_passage"=>$row["nb_passage"], "temps"=>$row["temps"], "borne_id"=>$row["borne_id"]);
     }
-    echo "Success ";
-}
 
 //header('../index.php');
